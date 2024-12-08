@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h1,h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.side-menu {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 20vw; 
+    height: 100vh; 
+    background: #A59D84;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    z-index: 5; 
+}
+.name-box {
+    border: 1px solid #000; 
+    padding: 10px; 
+    margin: 10px; 
+    background-color: #D7D3BF; 
+    border-radius: 5px; 
+    text-align: center; 
+    margin-top: 70px;
+}
+.side-menu .name{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li{
+    font-size: 14px;
+    padding: 10px 40px;
+    color: black;
+    display: flex;
+    align-items: center;
+    display: flex; 
+    gap: 10px;
+    text-align: center;
+}
+.side-menu li:hover{
+    background-color: white;
+    color: black;
+}
+.side-menu li a{
+    color: black;
+}
+.side-menu li span{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: #fff;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    left: 20vw; 
+    width: 80vw; 
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    padding-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+}
+.container .header .nav{
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .text{ 
+    justify-content: start;
+    width: 40vw;
+}
+.container .content {
+    position: relative;
+    margin-top: 10vh; 
+    margin-left: 1vw;
+    width: 80vw; 
+    min-height: 90vh;
+    padding: 20px; 
+}
+.container .content .content-2{
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.container .content .content-2 .recent-content {
+    min-height: 80vh;
+    width: 100%;
+    background: #ECEBDE;
+    margin: 25px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto; 
+    border-radius: 5px; 
+}
+
+table {
+    width: 100%; 
+    max-width: 100%; 
+    border-collapse: collapse; 
+    text-align: left;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px; 
+    text-align: center;
+    border: 1px solid #ddd; 
+    word-wrap: break-word; 
+}
+
+thead {
+    background-color: #D7D3BF; 
+    color: black;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; 
+}
+
+
+/* tambahan untuk tampilan di transaksi */
+/* Card dan Form */
+h2 {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-select, .form-control, .btn {
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus, .btn:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-light {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+input[type="number"], .form-select {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Margin tambahan */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* Tombol Input Barang */
+#add-barang {
+    background-color: #17a2b8;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#add-barang:hover {
+    background-color: #138496;
+}
+
